@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Progress Bar Task</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Progress Bar</h1>
+
+    <!-- Show form progress here-->
+    <div id="progress">
+      <div class="progress-bar-value">0%</div>
+      <div class="progress-bar-fill"></div>
+    </div>
+
+    <form id="autosave" novalidate>
+      <div>
+        <label for="name">Name</label>
+        <input type="text" name="name" id="name"/>
+        <span class="error"></span>
+      </div>
+      <div>
+        <label for="email">Email Address</label>
+        <input type="email" name="email" id="email" />
+        <span class="error"></span>
+      </div>
+      <div>
+        <label for="phone">Phone</label>
+        <input type="tel" name="phone" id="phone" />
+        <span class="error"></span>
+      </div>
+      <div>
+        <label for="website">Website</label>
+        <input type="url" name="url" id="website" />
+        <span class="error"></span>
+      </div>
+      <div>
+        <label for="notes">Notes</label>
+        <textarea id="notes"></textarea>
+        <span class="error"></span>
+      </div>
+      <button>Submit</button>
+    </form>
+
+    <script src="app.js"></script>
+  </body>
+</html>
